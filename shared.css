@@ -21,6 +21,16 @@ h1 {
   font-size: 2.5rem;
 }
 
+.three-am {
+  display: flex;
+  margin: 3em 0;
+}
+
+.stego {
+  border: 10px solid #FF69B4;
+  margin-left: 1em;
+}
+
 .bigger {
   background-color: #6b00c2;
   font-size: 2.7rem;
