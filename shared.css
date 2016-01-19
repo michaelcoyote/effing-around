@@ -4,6 +4,8 @@
 }
 
 body {
+  background: linear-gradient(#fff, #888);
+  background-attachment: fixed;
   margin: 0;
 }
 
