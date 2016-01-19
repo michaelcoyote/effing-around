@@ -1,4 +1,4 @@
-(function () {
+function animateDots() {
   var canvas = document.querySelector('#canvas-1');
   var ctxWidth = canvas.width;
   var ctxHeight = canvas.height;
@@ -39,4 +39,5 @@
 
   init();
   render();
-})();
+}
+animateDots();
