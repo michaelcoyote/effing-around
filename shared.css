@@ -10,8 +10,11 @@ body {
   padding: 20px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Blackout Sunrise';
+}
+
+h1 {
   color: #eb005a;
   padding: 0;
   margin: 10px 5px;
