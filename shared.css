@@ -7,11 +7,23 @@ body {
   background: linear-gradient(#fff, #888);
   background-attachment: fixed;
   margin: 0;
+  padding: 20px;
 }
 
 h1 {
   font-family: 'Blackout Sunrise';
   color: #eb005a;
-  padding: 0 20px;
+  padding: 0;
+  margin: 10px 5px;
   font-size: 2.5rem;
+}
+
+.bigger {
+  background-color: #6b00c2;
+  font-size: 2.7rem;
+  font-family: 'Blackout Sunrise';
+  text-shadow: #edff00 4px 2px 0;
+  padding: 0 20px;
+  line-height: 2.4rem;
+  font-weight: 600;
 }
