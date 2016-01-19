@@ -33,3 +33,7 @@ h1 {
 .conversation p {
   font-family: monospace;
 }
+
+.kokomo {
+  border: 10px solid #73ffff;
+}
