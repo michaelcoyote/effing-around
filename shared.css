@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Blackout Sunrise';
+  src: url(blackout_sunrise-webfont.woff);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Blackout Sunrise';
+  color: #eb005a;
+  padding: 0 20px;
+  font-size: 2.5rem;
+}
