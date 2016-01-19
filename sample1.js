@@ -4,7 +4,7 @@
   var ctxHeight = canvas.height;
   var ctx = canvas.getContext('2d');
   var start = window.mozAnimationStartTime || new Date().getTime();
-  var radius = 13;
+  var radius = 12.5;
 
   function init() {
     for (var i = 0; i < 5; i++) {
