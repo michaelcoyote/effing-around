@@ -48,6 +48,10 @@ h1 {
   border: 10px solid #73ffff;
 }
 
+.kokomo:hover {
+  border: 10px solid #111;
+}
+
 .ruth {
   padding: 5px;
   font-family: monospace;
