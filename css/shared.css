@@ -61,3 +61,19 @@ h1 {
   line-height: .4rem;
   background-color: #3385ff;
 }
+
+.brain-cap:after {
+  content: "Brain";
+}
+
+.butt-cap:after {
+  content: "Butt";
+}
+
+.brain:after {
+  content: "brain";
+}
+
+.butt:after {
+  content: "butt";
+}

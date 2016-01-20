@@ -1,6 +1,4 @@
 var delay = 10000; // 10 seconds
-var body = document.querySelector('body');
-var orig = body.innerHTML;
 
 var timer = null;
 var isButts = false;
@@ -9,16 +7,31 @@ function resetTimer() {
   timer = setTimeout(buttsify, delay);
 }
 
-resetTimer();
+var els = document.querySelectorAll('*');
+for (var i = 0; i < els.length; i++) {
+  if (els[i].children.length) {
+    continue;
+  }
+  var orig = els[i].innerHTML;
+  var butts = orig.replace(/brain/g, '<span class="brain"></span>')
+    .replace(/Brain/g, '<span class="brain-cap"></span>');
+  els[i].innerHTML = butts;
+}
 
-var butts = orig.replace(/brain/g, 'butt').replace(/Brain/g, 'Butt');
+resetTimer();
 
 function buttsify() {
   if (isButts) {
     return;
   }
-  body.innerHTML = butts;
-  animateDots();
+  var brains = document.querySelectorAll('.brain');
+  for (var i = 0; i < brains.length; i++) {
+    brains[i].className = 'butt';
+  }
+  var Brains = document.querySelectorAll('.brain-cap');
+  for (var i = 0; i < Brains.length; i++) {
+    Brains[i].className = 'butt-cap';
+  }
   isButts = true;
 }
 
@@ -26,8 +39,14 @@ function undo() {
   if (!isButts) {
     return;
   }
-  body.innerHTML = orig;
-  animateDots();
+  var butts = document.querySelectorAll('.butt');
+  for (var i = 0; i < butts.length; i++) {
+    butts[i].className = 'brain';
+  }
+  var Butts = document.querySelectorAll('.butt-cap');
+  for (var i = 0; i < Butts.length; i++) {
+    Butts[i].className = 'brain-cap';
+  }
   isButts = false;
 }
 
