@@ -77,3 +77,23 @@ h1 {
 .butt:after {
   content: "butt";
 }
+.poem {
+  font-family: Palatino;
+  font-size: 1.5rem;
+  line-height: .6rem;
+  background-color: #fcf3ef;
+  padding: 4px;
+  text-align: right;
+}
+.break {
+  padding-top: 18px;
+}
+.i {
+  color: red;
+  position: relative;
+}
+.i:before {
+  content: "ı";
+  position: absolute;
+  color: black;
+}
